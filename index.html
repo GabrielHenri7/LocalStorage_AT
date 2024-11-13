@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/JavaScript.js"></script>
+    <title>Local Storage JS - Biel e Nickete</title>
+</head>
+<body>
+    <form class="form" action="">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for="nome" class="nome">Nome</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="curso" class="curso">Curso:</label><br>
+            <input type="text" name="curso" id="curso"><br><br>
+            <label for="conclusao" class="conclusao">Ano de Conclusão</label><br>
+            <input type="number" min="1900" max="2050" name="conclusao" id="conclusao"><br><br>
+            <label for="indice" class="indice">Índice</label><br>
+            <input type="number" id="indice" name="indice"><br><br>
+            <input type="button" value="Cadastrar" class="btn" onclick="InserirDados()">
+            <input type="button" value="Consultar Todos" class="btn" onclick="ConsultarTodosDados()">
+            <input type="button" value="Consultar Específico" class="btn" onclick="ConsultarAlunoEspecifico()">
+            <input type="button" value="Atualizar" class="btn" onclick="AtualizaDados()">
+            <input type="button" value="Remover" class="btn" onclick="DeletarDados()">
+        </fieldset>
+    </form>
+    <p id="resultado"></p>
+</body>
+</html>

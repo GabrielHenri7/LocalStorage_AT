@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+ 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    padding: 20px;
+}
+ 
+.form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(30, 50, 100, 0.9); 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4); 
+    color: #ffffff;
+}
+ 
+fieldset {
+    border: 2px solid #1c2d5e;
+    border-radius: 5px;
+    padding: 15px;
+}
+ 
+legend {
+    font-size: 1.3em;
+    color: #ffffff;
+    font-weight: bold;
+}
+ 
+label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+}
+ 
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #4e6aa8; 
+    border-radius: 5px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #2d3e60; 
+}
+ 
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #2d3e60; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+ 
+input[type="button"]:hover {
+    background-color: #4e6aa8; 
+    color: #ffffff; 
+}
+ 
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4e6aa8; 
+    color: #ffffff;
+    font-size: 1em;
+}
+ 
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+ 
+    .form {
+        padding: 15px;
+    }
+ 
+    fieldset {
+        padding: 10px;
+    }
+ 
+    legend {
+        font-size: 1.2em;
+    }
+ 
+    label {
+        font-size: 0.9em;
+    }
+ 
+    input[type="text"],
+    input[type="number"],
+    input[type="button"] {
+        font-size: 0.9em;
+    }
+ 
+    #resultado {
+        font-size: 0.9em;
+    }
+}
